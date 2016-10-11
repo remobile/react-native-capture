@@ -1,28 +1,31 @@
 {
-    "name": "react-native-media-capture",
-        "version": "1.0.0",
-        "description": "A media-capture for react-native",
-        "main": "index.js",
-        "author": {
-            "name": "YunJiang.Fang",
-            "email": "42550564@qq.com"
-        },
-        "license": "MIT",
-        "keywords": [
-            "react-native",
-            "react-component",
-            "ios",
-            "android",
-            "media-capture",
-            "remobile",
-            "mobile"
-        ],
-        "homepage": "https://github.com/remobile/react-native-media-capture",
-        "bugs": {
-            "url": "https://github.com/remobile/react-native-media-capture/issues"
-        },
-        "repository": {
-            "type": "git",
-            "url": "git://github.com/remobile/react-native-media-capture.git"
-        }
+    "name": "@remobile/react-native-capture",
+    "version": "1.0.0",
+    "description": "A cordova media capture for react-native, support for ios and android",
+    "main": "index.js",
+    "author": {
+        "name": "YunJiang.Fang",
+        "email": "42550564@qq.com"
+    },
+    "license": "MIT",
+    "keywords": [
+        "react-native",
+        "react-component",
+        "ios",
+        "android",
+        "capture",
+        "remobile",
+        "mobile"
+    ],
+    "homepage": "https://github.com/remobile/react-native-capture",
+    "bugs": {
+        "url": "https://github.com/remobile/react-native-capture/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/remobile/react-native-capture.git"
+    },
+    "peerDependencies": {
+        "@remobile/react-native-cordova": "^1.1.0"
+    }
 }
