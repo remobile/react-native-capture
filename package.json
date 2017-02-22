@@ -1,6 +1,6 @@
 {
     "name": "@remobile/react-native-capture",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A cordova media capture for react-native, support for ios and android",
     "main": "index.js",
     "author": {
@@ -26,6 +26,6 @@
         "url": "git://github.com/remobile/react-native-capture.git"
     },
     "peerDependencies": {
-        "@remobile/react-native-cordova": "^1.1.0"
+        "@remobile/react-native-cordova": "^1.1.1"
     }
 }
