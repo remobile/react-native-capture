@@ -4,6 +4,6 @@
 */
 'use strict';
 
-var Capture = require('./libs/capture.js');
+const Capture = require('./libs/capture.js');
 
 module.exports = Capture;

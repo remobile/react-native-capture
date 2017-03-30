@@ -18,11 +18,11 @@
  * under the License.
  *
 */
-var utils = require('@remobile/react-native-cordova').utils,
+const utils = require('@remobile/react-native-cordova').utils,
     exec = require('@remobile/react-native-cordova').exec,
     CaptureError = require('./CaptureError');
 
-var File = function(name, localURL, type, lastModifiedDate, size){
+const File = function (name, localURL, type, lastModifiedDate, size) {
     this.name = name || '';
     this.localURL = localURL || null;
     this.type = type || null;
@@ -44,7 +44,7 @@ var File = function(name, localURL, type, lastModifiedDate, size){
  * lastModifiedDate {Date} last modified date
  * size {Number} size of the file in bytes
  */
-var MediaFile = function(name, localURL, type, lastModifiedDate, size){
+const MediaFile = function (name, localURL, type, lastModifiedDate, size) {
     MediaFile.__super__.constructor.apply(this, arguments);
 };
 
@@ -56,11 +56,11 @@ utils.extend(MediaFile, File);
  * @param {Function} successCB
  * @param {Function} errorCB
  */
-MediaFile.prototype.getFormatData = function(successCallback, errorCallback) {
-    if (typeof this.fullPath === "undefined" || this.fullPath === null) {
+MediaFile.prototype.getFormatData = function (successCallback, errorCallback) {
+    if (typeof this.fullPath === 'undefined' || this.fullPath === null) {
         errorCallback(new CaptureError(CaptureError.CAPTURE_INVALID_ARGUMENT));
     } else {
-        exec(successCallback, errorCallback, "Capture", "getFormatData", [this.localURL, this.type]);
+        exec(successCallback, errorCallback, 'Capture', 'getFormatData', [this.localURL, this.type]);
     }
 };
 
